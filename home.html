@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>x3ghx</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="main_content" class="main_content">
+        <div class="center_box">
+            <div class="image_container">
+                <img src="" alt="Random Image" class="main_image" id="main_image">
+                <div class="music_icon_hover" id="music_icon_hover">♪</div>
+                <div class="music_controls_panel" id="music_controls_panel">
+                    <div class="music_info">
+                        <span class="song_title" id="song_title">No song playing</span>
+                        <span id="playback_status">click play to start</span>
+                    </div>
+                    <div class="music_controls">
+                        <button class="music_btn" id="prev_btn">prev</button>
+                        <button class="music_btn" id="play_btn">play</button>
+                        <button class="music_btn" id="pause_btn">pause</button>
+                        <button class="music_btn" id="next_btn">next</button>
+                    </div>
+                    <div class="volume_control">
+                        <span style="color: var(--text); font-size: 11px;">vol:</span>
+                        <input type="range" class="volume_slider" id="volume_slider" min="0" max="1" step="0.1" value="0.7">
+                    </div>
+                </div>
+            </div>
+            
+            <button class="main_btn" onclick="window.open('https://t.me/x3ghx', '_blank')">telegram</button>
+            <button class="main_btn" onclick="window.open('https://github.com/datcathuh', '_blank')">github</button>
+            <button class="main_btn" id="readme_btn">readme</button>
+        </div>
+    </div>
+
+    <div class="modal_overlay" id="readme_modal">
+        <div class="modal_content">
+            <div class="modal_header">
+                <h2>readme.txt</h2>
+                <button class="close_btn" id="close_readme">×</button>
+            </div>
+            <div class="modal_body">
+                <h3>about me</h3>
+                <p>hey, i'm x3ghx. welcome to my little corner of the internet.</p>
+                
+                <h3>interests</h3>
+                <ul>
+                    <li>coding & web development</li>
+                    <li>music</li>
+                    <li>cybersecurity</li>
+                    <li>game cheats</li>
+                    <li>cats</li>
+                </ul>
+                
+                <h3>skills</h3>
+                <ul>
+                    <li>HTML/CSS/JavaScript</li>
+                    <li>C/C++</li>
+                    <li>UI/UX Design</li>
+                    <li>Reverse Engineering</li>
+                    <li>Linux</li>
+                </ul>
+                
+                <h3>currently working on</h3>
+                <p>building cool web projects, learning/making my own operating system, and exploring C.</p>
+                
+                <h3>contact</h3>
+                <p>
+                    telegram: <a href="https://t.me/x3ghx" target="_blank">@x3ghx</a> | 
+                    github: <a href="https://github.com/datcathuh" target="_blank">datcathuh</a>
+                </p>
+                <p>feel free to reach out for questions or just to chat!</p>
+                
+                <h3>philosophy</h3>
+                <p>"build things that matter, stay curious."</p>
+            </div>
+        </div>
+    </div>
+
+    <audio id="background_music" loop></audio>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
