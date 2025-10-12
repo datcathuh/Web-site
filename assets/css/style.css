@@ -167,7 +167,8 @@ body {
     padding: 10px;
     border-radius: 3px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    width: 180px;
+    width: 160px;
+    max-width: 160px;
     opacity: 0;
     transform: translateY(-10px);
     transition: all 0.3s ease;
@@ -221,6 +222,7 @@ body {
     align-items: center;
     gap: 6px;
     margin-top: 6px;
+    width: 100%;
 }
 
 .volume_slider {
@@ -229,9 +231,13 @@ body {
     outline: none;
     opacity: 0.7;
     transition: opacity 0.2s;
+    appearance: none;
     -webkit-appearance: none;
     height: 4px;
     border-radius: 2px;
+    max-width: 100px;
+    width: 100px;
+    min-width: 80px;
 }
 
 .volume_slider:hover {
@@ -260,6 +266,7 @@ body {
     background: var(--inline);
     height: 4px;
     border-radius: 2px;
+    width: 100%;
 }
 
 .volume_slider::-moz-range-track {
@@ -267,6 +274,7 @@ body {
     height: 4px;
     border-radius: 2px;
     border: none;
+    width: 100%;
 }
 
 .main_btn {
