@@ -67,7 +67,7 @@ if (document.getElementById('main_content')) {
 
     const songs = [
         { file: "../assets/music/1 800 jesus- band0me.mp3", name: "1 800 jesus- band0me" },
-        { file: "../assets/music/music/Sometimes Memory Fails Me Sometimes - Everyone Asked About You.mp3", name: "Sometimes Memory Fails Me Sometimes - Everyone Asked About You" }
+        { file: "../assets/music/Sometimes Memory Fails Me Sometimes - Everyone Asked About You.mp3", name: "Sometimes Memory Fails Me Sometimes - Everyone Asked About You" }
     ];
 
     let currentSongIndex = -1;
