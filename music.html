@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Library Player</title>
+  <link rel="stylesheet" href="assets/css/music.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="center_box">
+      <h1 class="app-title">Music Library</h1>
+      <p class="app-subtitle">Your personal music collection</p>
+      
+      <div class="library_container" id="libraryContainer">
+        <div class="library_header">
+          <h2>My Music Library</h2>
+          <div class="library_stats" id="libraryStats">
+            <span id="trackCount">0 tracks</span>
+          </div>
+        </div>
+        
+        <div class="track_list" id="trackList">
+          <div class="empty_library">
+            <p>No tracks in your library yet</p>
+            <p class="empty_hint">Drag and drop audio files to add them</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="drag_drop_area" id="dragDropArea">
+        <div class="drag_drop_text">Drag & Drop Audio Files Here</div>
+        <div class="drag_drop_hint">or click to browse your files</div>
+      </div>
+      
+      <div class="now_playing_container" id="nowPlayingContainer">
+        <div class="now_playing_header">
+          <h3>Now Playing</h3>
+        </div>
+        
+        <div class="now_playing_content">
+          <div class="album_art_container">
+            <div class="main_image default-art" id="albumArt">♫</div>
+          </div>
+          
+          <div class="track_info_panel">
+            <div class="music_info" id="musicInfo">
+              <span class="song_title">No track selected</span>
+              <span class="artist_name">Select a track to play</span>
+              <span class="album_name">Your music library</span>
+            </div>
+            
+            <div class="progress_container" id="progressContainer">
+              <div class="progress_bar" id="progressBar">
+                <div class="progress_fill" id="progressFill"></div>
+              </div>
+              <div class="time_display">
+                <span id="currentTime">0:00</span>
+                <span id="duration">0:00</span>
+              </div>
+            </div>
+            
+            <div class="music_controls">
+              <button class="music_btn control_prev" id="prevBtn">
+                <span>◀◀</span>
+              </button>
+              <button class="music_btn control_play" id="playBtn">
+                <span>▶</span>
+              </button>
+              <button class="music_btn control_pause" id="pauseBtn" style="display: none;">
+                <span>❚❚</span>
+              </button>
+              <button class="music_btn control_next" id="nextBtn">
+                <span>▶▶</span>
+              </button>
+              
+              <div class="volume_control">
+                <span class="volume_icon">🔊</span>
+                <input type="range" min="0" max="100" value="80" class="volume_slider" id="volumeSlider">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="status_message" id="statusMessage"></div>
+    </div>
+    
+    <div class="footer">
+      Music Library Player • Your personal music collection
+    </div>
+  </div>
+  
+  <audio id="audioPlayer"></audio>
+  <script src="assets/js/mlib.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 const secret_password = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
-const j = "x3ghx";
+const pw = "x3ghx";
 
 if (document.getElementById('splash-screen')) {
     const password_input = document.getElementById('password_input');
@@ -7,7 +7,7 @@ if (document.getElementById('splash-screen')) {
 
     function check_password() {
         const check_string = password_input.value;
-        if (check_string === j) { 
+        if (check_string === pw) { 
             localStorage.setItem('authenticated', 'true');
             window.location.href = 'home.html';
         } 
